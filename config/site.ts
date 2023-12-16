@@ -5,7 +5,7 @@ export const siteConfig = {
   url: "https://chef.atomicprompts.io",
   ogImage: "https://chef.atomicprompts.io/og.png",
   description:
-    "An open-source recipe generator powered by OpenAi and ChatGPT.",
+    "Lose weight, save money and eat only from your fridge. Say goodbye to mealtime indecision with AtomicChef.",
   mainNav: [
     {
       title: "AtomicPrompts Homepage",

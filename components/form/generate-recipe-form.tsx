@@ -38,7 +38,7 @@ export function RecipeForm({ onSubmit, isLoading }: RecipeFormProps) {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-full space-y-4 md:px-4"
+        className="w-full space-y-4 md:px-4 hidden-print"
       >
         <FormField
           control={form.control}

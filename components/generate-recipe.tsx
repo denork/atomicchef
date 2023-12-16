@@ -78,6 +78,10 @@ export function GenerateRecipe() {
             {generatedRecipe && (
               <>
                 <div className="flex justify-end px-4">
+                  <Button variant="outline" onClick={() => {window.print()}}>
+                    <Icons.printer className="mr-2 h-4 w-4" aria-hidden="true" />
+                    Print
+                  </Button>
                 </div>
                 <GeneratedRecipeContent recipe={generatedRecipe} />
               </>

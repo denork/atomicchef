@@ -21,7 +21,7 @@ export const formSchema = z.object({
 
 export const defaultValues: FormData = {
   ingredients: "",
-  cooking_time: [5],
+  cooking_time: [25],
   people: "2",
   difficulty: "easy",
   low_calori: false,

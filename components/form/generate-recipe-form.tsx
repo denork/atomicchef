@@ -69,7 +69,7 @@ export function RecipeForm({ onSubmit, isLoading }: RecipeFormProps) {
                 <Slider
                   id="cooking-time"
                   aria-label="Choose cooking time"
-                  defaultValue={[5]}
+                  defaultValue={[30]}
                   max={120}
                   step={10}
                   min={5}

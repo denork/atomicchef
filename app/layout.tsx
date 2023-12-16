@@ -11,7 +11,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 export const metadata: Metadata = {
   metadataBase: new URL("https://chef-genie.app"),
   title: {
-    default: siteConfig.name,
+    default: "Say goodbye to mealtime indecision with AtomicChef",
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -31,23 +31,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
-    title: siteConfig.name,
+    title: "Say goodbye to mealtime indecision with AtomicChef",
     description: siteConfig.description,
     siteName: siteConfig.name,
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: siteConfig.name,
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [siteConfig.ogImage],
     creator: "@faultyled",
   },
   icons: {

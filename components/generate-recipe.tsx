@@ -52,40 +52,6 @@ export function GenerateRecipe() {
     }
   }
 
-  const saveRecipe = async () => {
-    try {
-      const requestBody = {
-        ...formValues,
-        content: generatedRecipe,
-      }
-
-      const response = await fetch("/api/save-recipe", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(requestBody),
-      })
-
-      toast({
-        title: "Cool!",
-        description: "Recipe successfully saved",
-      })
-
-      if (!response.ok) {
-        toast({
-          variant: "destructive",
-          title: "Uh oh! Account needed.",
-          description: "Sign-in to save your recipe",
-          action: <ToastAction altText="Sign-in">Sign-In</ToastAction>,
-        })
-        throw new Error("Failed to save the recipe.")
-      }
-    } catch (error) {
-      console.error(error)
-    }
-  }
-
   return (
     <div className="max-w-5xl">
       <div
@@ -112,10 +78,6 @@ export function GenerateRecipe() {
             {generatedRecipe && (
               <>
                 <div className="flex justify-end px-4">
-                  <Button variant="outline" onClick={saveRecipe}>
-                    <Icons.heart className="mr-2 h-4 w-4" aria-hidden="true" />
-                    Save
-                  </Button>
                 </div>
                 <GeneratedRecipeContent recipe={generatedRecipe} />
               </>

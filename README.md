@@ -11,7 +11,6 @@ This project is still in development and is not ready for production use.
 
 - **Framework**: [Next.js](https://nextjs.org/) 13 `/app` dir 
 - **Database**: [Supabase](https://supabase.com/)
-- **Authentication**: [Clerk](https://clerk.com/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
   - **Primitives**: [Radix UI](https://radix-ui.com/)
   - **Components**: [shadcn/ui](https://ui.shadcn.com/)

@@ -7,21 +7,12 @@ export function SiteFooter() {
         <p className="text-center text-sm leading-loose text-muted-foreground">
           Built by{" "}
           <a
-            href={siteConfig.links.twitter}
+            href="https://atomicprompts.io"
             target="_blank"
             rel="noreferrer"
             className="font-medium underline underline-offset-4"
           >
-            faultyled
-          </a>
-          . The source code is available on{" "}
-          <a
-            href={siteConfig.links.github}
-            target="_blank"
-            rel="noreferrer"
-            className="font-medium underline underline-offset-4"
-          >
-            GitHub
+            AtomicPrompts
           </a>
           .
         </p>

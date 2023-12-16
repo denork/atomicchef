@@ -1,6 +1,5 @@
 import "@/styles/globals.css"
 import { Metadata } from "next"
-import { ClerkProvider } from "@clerk/nextjs"
 import { Analytics } from "@vercel/analytics/react"
 
 import { siteConfig } from "@/config/site"
@@ -16,17 +15,7 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: [
-    "Chef GPT",
-    "Chef Genie",
-    "Recipe Generator",
-    "Recipe ChatGPT",
-    "Recipe AI",
-    "Chef AI",
-    "Meal generator",
-    "Cook GPT",
-    "Cooking generator",
-  ],
+  keywords: [],
   authors: [
     {
       name: "faultyled",
@@ -72,7 +61,7 @@ interface RootLayoutProps {
 
 export default async function RootLayout({ children }: RootLayoutProps) {
   return (
-    <ClerkProvider>
+    <>
       <html lang="en" suppressHydrationWarning>
         <head />
         <body
@@ -90,6 +79,6 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           <Toaster />
         </body>
       </html>
-    </ClerkProvider>
+    </>
   )
 }

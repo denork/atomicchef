@@ -1,4 +1,3 @@
-import { currentUser } from "@clerk/nextjs"
 
 import { SiteFooter } from "@/components/layout/site-footer"
 import { SiteHeader } from "@/components/layout/site-header"
@@ -8,11 +7,9 @@ interface HomeLayoutProps {
 }
 
 export default async function HomeLayout({ children }: HomeLayoutProps) {
-  const user = await currentUser()
 
   return (
-    <div className="relative flex min-h-screen flex-col">
-      <SiteHeader user={user} />
+    <div className="relative flex min-h-screen flex-col mt-5">
       <div className="mx-auto flex-1">{children}</div>
       <SiteFooter />
     </div>

@@ -7,11 +7,11 @@ export default function IndexPage() {
         <h1 className="text-4xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
           Say goodbye to mealtime indecision with
           <span className="bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">
-            {" Chef Genie"}
+            {" AtomicChef"}
           </span>
         </h1>
         <h2 className="mx-auto text-xl font-semibold leading-tight tracking-tighter text-muted-foreground">
-          Recipe generator powered by OpenAi and ChatGPT
+          Lose weight, save money and eat only from your fridge
         </h2>
       </div>
       <GenerateRecipe />

@@ -12,7 +12,7 @@ export const formSchema = z.object({
     message: "Please add at least one ingredient",
   }),
   cooking_time: z.array(z.number()).optional(),
-  people: z.enum(["2", "4", "6"]).optional(),
+  people: z.enum(["1", "2", "4", "6"]).optional(),
   difficulty: z.string().optional(),
   low_calori: z.boolean().default(false).optional(),
   vegan: z.boolean().default(false).optional(),

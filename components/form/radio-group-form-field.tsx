@@ -22,6 +22,7 @@ interface RadioGroupFormFieldProps {
 }
 
 export const options: RadioGroupOption[] = [
+  { label: "1 Person", value: "1" },
   { label: "2 People", value: "2" },
   { label: "4 People", value: "4" },
   { label: "6 People", value: "6" },
@@ -42,7 +43,7 @@ export function RadioGroupFormField({
             <RadioGroup
               onValueChange={field.onChange}
               defaultValue={field.value}
-              className="grid grid-cols-3"
+              className="grid grid-cols-4"
               aria-label="people-recipe"
             >
               {options.map((option) => (
